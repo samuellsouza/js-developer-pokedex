@@ -151,6 +151,26 @@
     border-radius: 1rem;
 }
 
+.input-container {
+  position: relative;
+  display: inline-block; /* ou block, dependendo do layout */
+}
+
+.input-container i {
+  position: absolute;
+  left: 10px; /* Ajuste conforme necessário para o espaçamento */
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa; /* Cor do ícone */
+
+}
+
+.input-container input {
+  padding-left: 30px; /* Espaço para o ícone */
+  width: 200px; /* Largura do input */
+    border-radius: 50px;
+}
+
 @media screen and (min-width: 380px) {
     .pokemons {
         grid-template-columns: 1fr 1fr;
